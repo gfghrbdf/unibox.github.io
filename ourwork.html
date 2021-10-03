@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="An experimental slideshow with an inclined look with three slide previews and a content view on click." />
+    <meta name="keywords" content="slideshow, javascript, tweenmax, rotation, animation, css" />
+
+    <!-- Bostrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+   <!-- swiper css -->
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+
+    <!-- font awsome -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+   <!-- owl carosel -->
+
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+    <!-- aos css -->
+
+   <link rel="stylesheet" type="text/css" href="css/aos.css">
+
+   
+
+  
+   <!-- main css -->
+
+
+
+  
+
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+   <link rel="stylesheet" type="text/css" href="css/color.css">
+
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+   
+
+    <title>Unibox It</title>
+
+    
+
+
+  
+  </head>
+  <body>
+
+    <!-- navbar -->
+
+    
+
+    <header id="header" class="fixed-top d-flex align-items-center">
+      
+      
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Unibox It<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link  active" href="index.html">Home</a></li>
+          <li><a class="nav-link " href="#about">About</a></li>
+           <li class="dropdown"><a href="service.html"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Web Development</a></li>
+              <li class="dropdown"><a href="#"><span>Web Design</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Software Development</a></li>
+              <li><a href="#">Grapics Design</a></li>
+              <li><a href="#">Web Hosting</a></li>
+            </ul>
+          </li>
+        
+          <li><a class="nav-link  " href="#portfolio">Our Work</a></li>
+          
+      
+         
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#sign-in">Sign In</a></li>
+
+          <li><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#sign-up">Join</a></li>
+
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle fas fa-bars"></i>
+      </nav><!-- .navbar -->
+
+      <!-- <a href="#about" class="get-started-btn scrollto">Get Started</a> -->
+    </div>
+  </header><!-- End Header -->
+
+
+
+    <!-- navbar End-->
+
+
+    <!-- modal -->
+
+    <!-- Modal sign in -->
+<div class="sign_in modal fade" id="sign-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+       <div style="width: 100%; height: 100%; display: flex; justify-content: center;">
+       
+        <h5 class="modal-title" id="staticBackdropLabel">Login to Unobox it</h5>
+      </div>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div style="width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: center;">
+      <div class="modal-body">
+
+        
+          <div class="d-grid gap-2">
+
+          
+          <a href="#" class="btn btn-primary btn-block" style="padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-facebook" style="margin-right: 1rem;"></i> Continue With Facebook</a>
+
+          <a href="#" class="btn btn-light btn-block" style="color: #62646a; border: 1px solid #e4e5e7; padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-google" style="margin-right: 1rem;"></i> Continue With Google</a>
+
+        </div>
+
+        <div class="my-4">
+          
+          <small> Login With Email Password  </small>
+
+        </div>
+
+         <form class="container">
+
+        
+          
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="email" name="email" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="password" name="password" class="form-control my-4" placeholder="Password">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px; background: #1dbf73; color: #fff;" type="submit" name="submit" value="Continue" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+
+        </form>
+          
+        
+     
+
+      </div>
+
+    </div>
+
+      
+        
+        
+
+
+
+     
+
+      <div class="modal-footer">
+        <div style="margin: auto;">
+
+          
+          <p style="margin-bottom: 0; color: gray;"> Login Here Now </p>
+
+        </div>
+       <!--  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button> -->
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- sign in modal end -->
+
+
+  <!-- sign up model -->
+
+
+      <!-- Modal sign in -->
+<div class="sign_up modal fade" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div style="width: 100%; height: 100%; display: flex; justify-content: center;">
+       
+        <h5 class="modal-title" id="staticBackdropLabel">Sign Up to Unobox it</h5>
+      </div>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div style="width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: center;">
+      <div class="modal-body">
+
+        
+          <div class="d-grid gap-2">
+
+          
+          <a href="#" class="btn btn-primary btn-block" style="padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-facebook" style="margin-right: 1rem;"></i> Continue With Facebook</a>
+
+          <a href="#" class="btn btn-light btn-block" style="color: #62646a; border: 1px solid #e4e5e7; padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-google" style="margin-right: 1rem;"></i> Continue With Google</a>
+
+        </div>
+
+        <div class="my-4">
+          
+          <small> Sign Up With Email Password  </small>
+
+        </div>
+
+         <form class="container">
+
+        
+          
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="email" name="email" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="password" name="password" class="form-control my-4" placeholder="Password">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="password" name="password" class="form-control mb-4" placeholder=" Conform Password">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px; background: #1dbf73; color: #fff;" type="submit" name="submit" value="Continue" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+
+        </form>
+          
+        
+     
+
+      </div>
+
+    </div>
+
+      
+        
+        
+
+
+
+     
+
+      <div class="modal-footer">
+       
+        <div style="margin: auto;">
+
+          
+          <p style="margin-bottom: 0; color: gray;"> Sign Up Here Now </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- sign up modal end -->
+
+
+
+    <!-- modal end -->
+
+
+   
+
+
+    <section id="portfolio" class="wrapper portfolio">
+      <div class="container">
+
+        <div class="text-center protfolio-text">
+          <h2>Our Works</h2>
+           <div style="margin: 20px 0 60px 0; width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: red;" class="botm-mrg"></div>  
+
+          </div>
+        </div>
+
+        
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-website">Website</li>
+              <li data-filter=".filter-software">Software</li>
+              <li data-filter=".filter-seo">Seo</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+              
+          <div class="col-lg-4 col-md-4 portfolio-item filter-website">
+           
+            <div class="portfolio-wrap">
+              
+              <img src="images/tim-kabel-FCrYdP8gohg-unsplash.jpg" class="img-fluid" alt="">
+              
+              <div class="portfolio-info">
+                <h3 style="text-align: center; color: #fff;">Website</h3>
+
+                <div style=" width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: #fff;" class="botm-mrg"></div>  
+
+          </div>
+             
+             <p class="mt-2 text-light">Wordpress Website</p>   
+             
+              </div>
+            </div>
+         
+          </div>
+
+          <div class="col-lg-4 col-md-4 portfolio-item filter-seo">
+            <a href="department-details.html">
+            <div class="portfolio-wrap">
+              <img src="images/tim-kabel-FCrYdP8gohg-unsplash.jpg" class="img-fluid" alt="">
+             
+              <div class="portfolio-info">
+                <h3 style="text-align: center; color: #fff;">Seo</h3>
+
+                <div style=" width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: #fff;" class="botm-mrg"></div>  
+
+          </div>
+             
+             <p class="mt-2 text-light">Facebook Marketing</p>   
+             
+              </div>
+
+            </div>
+            </a>
+          </div>
+
+       
+
+         
+          <div class="col-lg-4 col-md-4  portfolio-item filter-software">
+            <a href="department-details.html">
+            <div class="portfolio-wrap">
+              <img src="images/tim-kabel-FCrYdP8gohg-unsplash.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h3 style="text-align: center; color: #fff;">Software</h3>
+
+                <div style=" width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: #fff;" class="botm-mrg"></div>  
+
+          </div>
+             
+             <p class="mt-2 text-light">School Management</p>   
+             
+              </div>
+            </div>
+            </a>
+          </div>
+
+         
+
+        </div>
+
+      </div>
+    </section>
+    
+
+     
+
+    <!-- our Work end-->
+
+
+    <!-- our team -->
+
+  
+
+
+    
+
+
+    
+
+    <!-- footer -->
+
+    <footer id="footer" class="footer">
+      
+      <div class="footer_top">
+        
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-md-6 footer_contact" data-aos="fade-up"   data-aos-delay="100">
+              
+              <h3>Unibox It</h3>
+
+              <p>United State
+
+                <br>Los Angels<br>
+                001547<br>
+                </p>
+
+                <strong>Phone:</strong> +12548980<br>
+                <strong>Email:</strong> Example@gmail.com
+
+
+              
+
+            </div>
+
+            <div  class="col-lg-2 col-md-6 footer_links" data-aos="fade-up" data-aos-delay="50">
+              
+              <h4>Useful Links</h4>
+
+              <ul>
+                
+                <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer_links" data-aos="fade-down" data-aos-delay="50">
+              
+              <h4>Our Services</h4>
+
+              <ul>
+                
+                <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Web Development</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Web Design</a>
+
+                </li>
+
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Grapics Design</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Seo</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Software Development</a>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="text-center col-lg-4 col-md-6 footer_newsletter" data-aos="fade-down" data-aos-delay="100">
+
+              <h4>Join Our Newsletter </h4>
+              <p>Amazing Software Experiance Amazing web Server</p>
+              <form>
+                
+                <input type="email" name="email">
+                <input type="submit" value="Subscribe">
+              </form>
+              
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+     
+       <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Unibox It</span></strong>. All Rights Reserved
+        </div>
+       
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fab fa-skype"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+
+    </footer>
+
+    <!-- footer end -->
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+
+    <script src="js/jquery-3.6.0.js"></script>
+
+
+    <!-- boostrap js -->
+
+    <script src="js/bootstrap.min.js"></script>
+
+   <!-- owl carosel css -->
+
+    <script src="js/owl.carousel.min.js"></script>
+   
+   <!-- owl carosel css end-->
+
+   <!-- aos js -->
+
+   <script src="js/aos.js"></script>
+
+
+  
+
+   
+
+    <!-- particle -->
+
+    <script src="js/particles.min.js"></script>
+
+
+    <script src="js/app.js"></script>
+
+    <!-- counter js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- main js -->
+
+    <!-- owl carosel -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- our work -->
+
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- filter image -->
+
+    <script src="js/filter.min.js"></script>
+
+    <!-- swiper js -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+ 
+
+    <script src="js/main.js"></script>
+    <script src="js/vanilla.js"></script>
+    <script src="js/index.js"></script>
+
+   
+
+
+   
+
+   
+
+   
+
+    
+
+
+    
+  </body>
+</html>

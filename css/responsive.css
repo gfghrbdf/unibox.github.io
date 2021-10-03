@@ -1,0 +1,436 @@
+
+@media(max-width : 1020px){
+
+	.home-text{
+		padding-top: 20rem;
+	}
+
+	.home-text h1{
+
+		
+		font-size: 70px;
+
+	}
+
+	.home-text p{
+		font-size:20px;
+	}
+
+
+}
+
+@media(max-width : 768px){
+
+
+
+	.conter{
+		height: 50%;
+	}
+
+	/*home section*/
+
+	.home-text{
+		padding-top: 20rem;
+	}
+
+	.home-text h1{
+
+		
+		font-size: 60px;
+	
+
+
+	}
+
+	.home-text p{
+		font-size:22px;
+	}
+
+	.home-button{
+
+	border: 0;
+	
+	outline: 0;
+	padding: 14px 35px;
+	border-radius: 50px;
+	background: #dc3545;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	transition: 0.6s ease-out;
+	border: 0.1522rem solid #dc3545;
+
+}
+
+/*home section end*/
+
+/*work section*/
+
+.work .card h2{
+
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 10px 0;
+	transform: translateZ(20px);
+}
+
+/*work section end*/
+
+
+	/*counter section start*/
+
+	.counter-card-div .counter-div{
+
+
+	width: 170px;
+	height: 150px;
+	margin-bottom: 1rem;
+	
+
+
+}
+
+.counter-card-div .counter-div h5{
+
+	font-size: 1rem;
+
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+	/*counter section end*/
+
+
+	/*our service section*/
+
+	.out-services h2{
+	font-size: 2rem;
+	
+}
+
+
+	.service-box-container{
+		width: 100%;
+		height: 50vh!important;
+	}
+
+	.service-content h5{
+		font-size: 1.5rem;
+	}
+
+	.service-content i{
+	margin-top: 12rem;
+	margin-bottom: 8px;
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+
+.service-content .list li{
+	font-size: 16px;
+	line-height: 25px;
+	
+}
+
+
+	
+
+
+	/*our service section end*/
+
+
+
+}
+
+
+
+@media(max-width : 767px){
+
+	.pricing-top table{
+  	display: none;
+  }
+
+
+
+	.home-text h1{
+
+		color: #fff;
+		font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 40px;
+
+
+	}
+
+	.home-text p{
+
+		
+		font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+
+
+	}
+
+	.home-button{
+		padding: 8px 26px;
+	}
+
+	.home-text{
+		padding-top: 16rem;
+	}
+
+
+	/*our service section start*/
+
+
+
+	.out-services h2{
+	font-size: 2rem;
+	
+}
+
+
+	.service-box-container{
+		width: 100%;
+		height: 50vh!important;
+	}
+
+	.service-content h5{
+		font-size: 1.5rem;
+	}
+
+	.service-content i{
+	margin-top: 5rem;
+	margin-bottom: 8px;
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+
+.service-content .list li{
+	font-size: 16px;
+	line-height: 22px;
+	
+}
+
+.work-text{
+
+	font-size: 2rem!important;
+}
+
+
+	
+
+
+	/*our service section end*/
+
+
+}
+
+
+@media(max-width : 375px){
+
+	.home-text{
+		padding-top: 10rem;
+	}
+
+	.home-text h1{
+		font-size: 42px;
+	}
+
+	.home-text p{
+		font-size: 18px;
+	}
+
+
+	/*counter section*/
+
+	/*counter section*/
+
+
+.counter-card-div .counter-div{
+
+
+	width: 140px;
+	height: 150px;
+	margin-bottom: 1rem;
+	
+
+
+}
+
+.counter-card-div .counter-div h5{
+
+	font-size: 0.8rem;
+
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.counter-card-div .counter-div h2{
+
+	font-size: 2rem;
+
+}
+
+
+	/*counter section end*/
+
+	/*service section*/
+
+	.service-content .list li{
+	font-size: 14px;
+	line-height: 18px;
+	
+}
+
+
+	/*service section end*/
+
+
+
+}
+
+
+@media(max-width : 330px){
+
+	.home-text{
+		padding-top: 8rem;
+	}
+
+	.home-text h1{
+		font-size: 30px;
+		line-height: 50px;
+	}
+
+	.home-text p{
+		font-size: 14px;
+	}
+
+	.home-button{
+
+	border: 0;
+	
+	outline: 0;
+	padding: 6px 28px;
+	border-radius: 50px;
+	background: #dc3545;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	transition: 0.6s ease-out;
+	border: 0.1522rem solid #dc3545;
+
+}
+
+/*counter section*/
+
+
+.counter-card-div .counter-div{
+
+
+	width: 130px;
+	height: 150px;
+	margin-bottom: 1rem;
+	
+
+
+}
+
+.counter-card-div .counter-div h5{
+
+	font-size: 0.8rem;
+
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.counter-card-div .counter-div h2{
+
+	font-size: 2rem;
+
+}
+
+
+
+	.out-services h2{
+	font-size: 2rem;
+	
+}
+
+
+	.service-box-container{
+		width: 100%;
+		height: 50vh!important;
+	}
+
+	.service-content h5{
+		font-size: 1.5rem;
+	}
+
+	.service-content i{
+	margin-top: 12rem;
+	margin-bottom: 8px;
+	font-size: 40px;
+	margin-bottom: 1rem;
+}
+
+.service-content .list li{
+	font-size: 16px;
+	line-height: 25px;
+	
+}
+
+
+	
+
+
+	/*our service section end*/
+
+
+
+
+}
+
+@media(max-width: 320px){
+
+
+	/*our service section start*/
+
+
+
+	.out-services h2{
+	font-size: 2rem;
+	
+}
+
+
+	.service-box-container{
+		width: 100%;
+		height: 60vh!important;
+	}
+
+	.service-content h5{
+		font-size: 1.3rem;
+	}
+
+	.service-content i{
+	margin-top: 5rem;
+	margin-bottom: 8px;
+	font-size: 40px;
+	margin-bottom: 0.3rem;
+}
+
+.service-content .list li{
+	font-size: 14px;
+	line-height: 22px;
+	
+}
+
+}

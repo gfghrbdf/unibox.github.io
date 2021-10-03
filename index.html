@@ -1,0 +1,1948 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="An experimental slideshow with an inclined look with three slide previews and a content view on click." />
+    <meta name="keywords" content="slideshow, javascript, tweenmax, rotation, animation, css" />
+
+    <!-- Bostrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+   <!-- swiper css -->
+
+<link
+  rel="stylesheet"
+  href="css/swiper-bundle.min.css"
+/>
+
+
+    <!-- font awsome -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+   <!-- owl carosel -->
+
+   <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+
+   <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+    <!-- aos css -->
+
+   <link rel="stylesheet" type="text/css" href="css/aos.css">
+
+   
+
+  
+   <!-- main css -->
+
+
+
+  
+
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+   <link rel="stylesheet" type="text/css" href="css/color.css">
+
+   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+   
+
+    <title>Unibox It</title>
+
+    
+
+
+  
+  </head>
+  <body>
+
+    <div class="top">
+
+      <div class="container">
+        
+        <div class="top_Contact_section row">
+
+          <div class="contact_innero d-flex col-md-6 col-sm-12">
+            
+
+
+          <div class="cont_1">
+
+            <a  style="color: #fff; padding-right: 10px" href="https://wa.me/01919711877" target="_blank"> <i class="fa fa-phone" style="color: #fff; font-size: 14px;"></i> +01489544569</a> 
+            
+
+
+          </div>
+
+          <span style="color: #fff;"> | </span>
+
+           <div class="cont_1">
+
+            <a style="color: #fff; padding-left: 10px;" href="mailto:nahidazmn@gmail.com"> <i class="fa fa-envelope" style="color: #fff; font-size: 14px;"></i> info@gmail.com</a> 
+            
+
+
+          </div>
+
+
+
+
+          </div>
+
+          <div style="float: right; " class="col-md-6 col-sm-12 top_social_head">
+            
+
+
+          <div class="d-flex">
+
+            <div class="d-flex left_socio">
+              
+                <div class="log">
+              
+              <a style="color: #fff;" href="#">Login</a>
+
+            </div>
+
+            <span style="color: #fff; margin: 0 10px;"> | </span>
+
+             <div class="log">
+              
+              <a style="color: #fff;" href="#">Register</a>
+
+
+
+            </div>
+
+
+            </div>
+            
+         
+
+            <ul class="soci">
+              
+             <li class="facebook"> <a href="#"> <i class="fab fa-facebook-f" style="color: #fff;"></i> </a></li>
+              <li class="twitter"> <a > <i class="fab fa-twitter" style="color: #fff;"></i> </a></li>
+
+              <li class="youtube"> <a > <i class="fab fa-youtube" style="color: #fff;"></i> </a></li>
+              <li class="linkedin"> <a > <i class="fab fa-linkedin-in" style="color: #fff;"></i> </a></li>
+
+              <li class="pinterest"> <a > <i class="fab fa-pinterest" style="color: #fff;"></i> </a></li>
+
+             
+
+
+
+            </ul>
+
+
+
+
+
+
+          </div>
+
+
+
+          </div>
+
+
+
+          
+          
+
+        </div>
+
+      </div>
+      
+     
+
+    </div>
+
+
+
+
+
+
+
+      <nav class="navbar navbar-expand-lg text-center">
+  <div class="container-fluid">
+
+    <img class="img-fluid" style="cursor: pointer; width: 15%;" src="images/apple-touch-icon.png ">
+   
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <span class="bi bi-list mobile-nav-toggle fas fa-bars"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav_links_ato">
+       <li class="nav-item fster">
+          <a style="color: #fff;" class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Our Work</a>
+        </li>
+         <li class="nav-item lst_cld">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <li class="nav-item lst_cld">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+
+        <li class="nav-item lst_cld">
+          <a class="nav-link" href="#">Register</a>
+        </li>
+       
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- modal -->
+
+    <!-- Modal sign in -->
+<div class="sign_in modal fade" id="sign-in" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+       <div style="width: 100%; height: 100%; display: flex; justify-content: center;">
+       
+        <h5 class="modal-title" id="staticBackdropLabel">Login to Unobox it</h5>
+      </div>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div style="width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: center;">
+      <div class="modal-body">
+
+        
+          <div class="d-grid gap-2">
+
+          
+          <a href="#" class="btn btn-primary btn-block" style="padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-facebook" style="margin-right: 1rem;"></i> Continue With Facebook</a>
+
+          <a href="#" class="btn btn-light btn-block" style="color: #62646a; border: 1px solid #e4e5e7; padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-google" style="margin-right: 1rem;"></i> Continue With Google</a>
+
+        </div>
+
+        <div class="my-4">
+          
+          <small> Login With Email Password  </small>
+
+        </div>
+
+         <form class="container">
+
+        
+          
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="email" name="email" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="password" name="password" class="form-control my-4" placeholder="Password">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px; background: #1dbf73; color: #fff;" type="submit" name="submit" value="Continue" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+
+        </form>
+          
+        
+     
+
+      </div>
+
+    </div>
+
+      
+        
+        
+
+
+
+     
+
+      <div class="modal-footer">
+        <div style="margin: auto;">
+
+          
+          <p style="margin-bottom: 0; color: gray;"> Login Here Now </p>
+
+        </div>
+       <!--  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button> -->
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- sign in modal end -->
+
+
+  <!-- sign up model -->
+
+
+      <!-- Modal sign in -->
+<div class="sign_up modal fade" id="sign-up" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div style="width: 100%; height: 100%; display: flex; justify-content: center;">
+       
+        <h5 class="modal-title" id="staticBackdropLabel">Sign Up to Unobox it</h5>
+      </div>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div style="width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: center;">
+      <div class="modal-body">
+
+        
+          <div class="d-grid gap-2">
+
+          
+          <a href="#" class="btn btn-primary btn-block" style="padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-facebook" style="margin-right: 1rem;"></i> Continue With Facebook</a>
+
+          <a href="#" class="btn btn-light btn-block" style="color: #62646a; border: 1px solid #e4e5e7; padding: 10px 30px 10px 10px; font-size: 18px;"> <i class="fab fa-google" style="margin-right: 1rem;"></i> Continue With Google</a>
+
+        </div>
+
+        <div class="my-4">
+          
+          <small> Sign Up With Email Password  </small>
+
+        </div>
+
+         <form class="container">
+
+        
+          
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="email" name="email" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="password" name="password" class="form-control my-4" placeholder="Password">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px;" type="password" name="password" class="form-control mb-4" placeholder=" Conform Password">
+
+          </div>
+
+          <div class="form-group">
+            
+            <input style="font-size: 18px; background: #1dbf73; color: #fff;" type="submit" name="submit" value="Continue" class="form-control" placeholder="Email / Username">
+
+          </div>
+
+
+        </form>
+          
+        
+     
+
+      </div>
+
+    </div>
+
+      
+        
+        
+
+
+
+     
+
+      <div class="modal-footer">
+       
+        <div style="margin: auto;">
+
+          
+          <p style="margin-bottom: 0; color: gray;"> Sign Up Here Now </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- sign up modal end -->
+
+
+
+    <!-- modal end -->
+
+
+    <!-- home section start -->
+
+
+
+
+
+
+
+
+<section id="home_wrapper">
+
+
+
+  <!-- carosel -->
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="home_1">
+        
+         <div class="container home_wrapper_text" >
+        
+        <div class="wrapper_texo" data-aos="fade-right" data-aos-delay="500"  data-aos-duration="1000">
+
+          <h1>Suiper Cool Amazing Texo super</h1>
+          <p>Wow box amdsdf dfgh fsdg</p>
+
+          <a class="home-button" href="#">Contact</a>
+          
+
+
+
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+    <div class="carousel-item">
+     <div class="home_2">
+       
+        <div class="container home_wrapper_text">
+        
+        <div class="wrapper_texo" data-aos="fade-right" data-aos-delay="500"  data-aos-duration="1000">
+
+          <h1>Suiper Cool Amazing Texo super 2</h1>
+          <p>Wow box amdsdf dfgh fsdg</p>
+
+          <a class="home-button" href="#">Contact</a>
+          
+
+
+
+        </div>
+
+      </div>
+
+     </div>
+    </div>
+    <div class="carousel-item">
+      <div class="home_3">
+        
+         <div class="container home_wrapper_text">
+        
+        <div class="wrapper_texo" data-aos="fade-right" data-aos-delay="500"  data-aos-duration="1000">
+
+          <h1>Suiper Cool Amazing Texo super 3</h1>
+          <p>Wow box amdsdf dfgh fsdg</p>
+
+          <a class="home-button" href="#">Contact</a>
+          
+
+
+
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+  <!-- end carosel -->
+
+
+
+
+
+
+
+     
+  
+
+
+</section>
+
+
+    
+
+   
+    
+
+
+
+
+    
+
+
+    <!-- home section end -->
+
+   
+
+
+  
+  <!-- work section  -->
+
+
+
+
+   
+
+
+    <section class="work wrapper">
+
+      <div class="text-center work-content">
+        
+        <h2 class="work-text" style=" font-size: 2.5rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 10px;">How We Work</h2>
+
+      </div>
+
+      <div style="margin-bottom: 4rem; width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 5px; background: red;" class="botm-mrg"></div>  
+
+          </div>   
+
+
+      <div class="container d-flex align-items-center">
+        
+        <div class="row align-items-center" data-aos="fade-down" data-aos-duration="1000">
+          
+          <div class="col-lg-4 col-md-4 text-center mb-2 mb-lg-0 element" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+            
+            <div class="card border-0">
+              <div class="image-div text-center">
+              <img src="images/1.png" class="img-fluid">
+            </div>
+
+              <h2>RESEARCH</h2>
+
+              <p>Research is vastly crucial for any service. We research every part of our work. Our research team does the primary work so that we can proceed to the next step.</p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 2nd -->
+
+          <div class="col-lg-4 col-md-4 text-center mb-2 mb-lg-0 element" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+            
+            <div class="card border-0">
+              <div class="image-div text-center">
+              <img src="images/2.png" class="img-fluid">
+            </div>
+
+              <h2>DEVELOPMENT</h2>
+
+              <p>After research about our project, we are going to develop our idea. We build our project scratch to serve you the perfect. Your project is our concern.</p>
+
+            </div>
+
+          </div>
+
+          <!-- 3rd -->
+
+          <div class="col-lg-4 col-md-4 text-center mb-2 mb-lg-0 element" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+            
+            <div class="card border-0">
+              <div class="image-div text-center">
+              <img src="images/3.png" class="img-fluid">
+            </div>
+
+              <h2>IMPLEMENT</h2>
+
+              <p>After the perfect scratching, we implement the ideas in the project to satisfy you completely. We love to meet your requirement.Your project is our concern</p>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+      
+
+    </section>
+
+
+    <!-- how we work section end -->
+
+
+   
+   
+
+
+    <!--  counter section -->
+
+
+    <section class="counter wrapper">
+
+    
+      
+      <div id="counter-image">
+
+       
+
+
+      </div>
+
+      <div class="counter-card-div">
+        
+        <div class="counter-item d-flex align-items-center">
+          <!-- 1st -->
+         <div class="text-center mb-lg-0 mb-5">
+           
+           <div class="counter-div" data-aos="fade-up"  data-aos-delay="100">
+             
+             <h5>Happy Clients</h5>
+
+             <h2><span class="coun">255</span></h2>
+
+           </div>
+
+         </div> 
+
+         <!-- 2nd -->
+
+         <div class="text-center mb-lg-0 mb-5">
+           
+           <div class="counter-div" data-aos="fade-down" data-aos-delay="200">
+             
+             <h5>Complete Projects</h5>
+
+             <h2><span class="coun">390</span></h2>
+
+           </div>
+
+         </div>
+
+         <!-- 3rd -->
+
+         <div class="text-center mb-lg-0 mb-5">
+           
+           <div class="counter-div" data-aos="fade-up" data-aos-delay="300">
+             
+             <h5>Cup Of Coffee</h5>
+
+             <h2><span class="coun">650</span></h2>
+
+           </div>
+
+         </div>
+
+         <!-- 4th -->
+
+         <div class="text-center mb-lg-0 mb-5">
+           
+           <div class="counter-div" data-aos="fade-down" data-aos-delay="400">
+             
+             <h5>Free Resource</h5>
+
+             <h2><span class="coun">6</span></h2>
+
+           </div>
+
+         </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!--  counter section -->
+
+
+    <!-- our services section -->
+
+
+    <section class="out-services">
+
+      <div class="text-center work-content">
+        
+        <h2>Our Services</h2>
+
+      </div>
+
+      <div style="margin-bottom: 4rem; width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 5px; background: red;" class="botm-mrg"></div>  
+
+          </div> 
+
+      <div class="container">
+        
+       <div class="row d-flex align-items-center g-2">
+         
+       <div class="service-box col-lg-4 col-md-6 text-center" data-aos="fade-up" data-aos-duration="700">
+         
+         <div class="service-box-container hover-section-1" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/hero-bg.jpg') no-repeat; background-size: cover;background-position: center; border-radius: 5px;transition: 0.5s all;width: 100%; height: 60vh;">
+           
+           <div class="service-content">
+              
+              <i class="fas fa-envelope service-icon1"></i>
+
+             <h5>Software Development</h5>
+
+              <ul style="padding: 0;" class="list service-list1">
+
+
+
+                <li style="color: #fff;">->School Management</li>
+                <li> ->Pharmacy Management</li>
+                 <li>->Super Shop Management</li>
+                 <li>->Restaurant Management</li>
+                 <li class="mb-4">->Custom Software</li>
+                <li><a href="singleService.html" class="service-btn">Details</a></li>
+
+
+
+             </ul>
+
+           </div>
+
+         </div>
+
+       </div>
+
+
+       <div class="service-box col-lg-4 col-md-6 text-center" data-aos="fade-up"
+     
+     data-aos-duration="700">
+         
+         <div class="service-box-container hover-section-2" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/hector-martinez-EG49vTtKdvI-unsplash.jpg') no-repeat; background-size: cover;background-position: center; border-radius: 5px;transition: 0.5s all;width: 100%; height: 60vh;">
+           
+           <div class="service-content">
+              
+              <i class="fas fa-envelope service-icon2"></i>
+
+             <h5>Web Design </h5>
+
+             <ul style="padding: 0;" class="list service-list2">
+               
+              <li>->PSD To HTML</li>
+               <li>->UI/UX Design</li>
+               <li>->Web Template Design</li>
+               <li>->PSD/HTML To WordPress</li>
+               <li>->Front End Design</li>
+               <li class="mb-3">->Email Template</li>
+              <li><a href="singleService.html" class="service-btn">Details</a></li>
+
+
+
+             </ul>
+
+
+
+
+           </div>
+
+         </div>
+
+       </div>
+
+
+       <div class="service-box col-lg-4 col-md-6 text-center" data-aos="fade-up"
+    
+     data-aos-duration="700">
+       
+         
+         <div class="service-box-container hover-section-3" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/tim-kabel-FCrYdP8gohg-unsplash.jpg') no-repeat; background-size: cover;background-position: center; border-radius: 5px;transition: 0.5s all;width: 100%; height: 60vh;">
+           
+           <div class="service-content">
+              
+              <i class="fas fa-envelope service-icon3"></i>
+
+             <h5>Web Development</h5>
+
+              <ul style="padding: 0;" class="list service-list3">
+               
+             <li>->News Portal Development</li>
+             <li>->Custom CMS Development</li>
+             <li>->Educational Ins. Website</li>
+             <li>->E-Commerce Development</li>
+             <li>->NGO Website Development</li>
+             <li class="mb-3">->WordPress Development</li>
+              <li><a href="singleService.html" class="service-btn mt-3">Details</a></li>
+
+
+
+             </ul>
+
+
+           </div>
+
+         </div>
+         
+
+
+       </div>
+
+
+       <div class="service-box col-lg-4 col-md-6 text-center" >
+       
+         
+         <div class="service-box-container hover-section-4" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/carlos-muza-hpjSkU2UYSU-unsplash.jpg') no-repeat; background-size: cover;background-position: center; border-radius: 5px;transition: 0.5s all;width: 100%; height: 60vh;">
+           
+           <div class="service-content">
+              
+              <i class="fas fa-envelope service-icon3"></i>
+
+             <h5>Graphic Design Service</h5>
+
+              <ul style="padding: 0;" class="list service-list4">
+               
+             
+             <li>  ->Logo Design</li>
+             <li>->Flyer & Brochure Design</li>
+             <li>->Corporate Branding</li>
+             <li>->PSD Template Design</li>
+             <li>->Web & Social Media Ad.</li>
+             <li class="mb-4">->Prient Media Design</li>
+              <li><a href="singleService.html" class="service-btn">Details</a></li>
+
+
+
+             </ul>
+
+
+           </div>
+
+         </div>
+         
+
+
+       </div>
+
+
+       <div class="service-box col-lg-4 col-md-6 text-center">
+       
+         
+         <div class="service-box-container hover-section-5" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/luca-bravo-XJXWbfSo2f0-unsplash.jpg') no-repeat; background-size: cover;background-position: center; border-radius: 5px;transition: 0.5s all;width: 100%; height: 60vh;">
+           
+           <div class="service-content">
+              
+              <i class="fas fa-envelope service-icon3"></i>
+
+             <h5>Digital Marketing</h5>
+
+              <ul style="padding: 0;" class="list service-list5">
+               
+             <li>->Social Media Ad. Campaign</li>
+             <li>->Onsite SEO Service</li>
+             <li>->Website Ranking Service</li>
+             <li>->PSD Template Design</li>
+             <li>->Web & Social Media Ad.</li>
+             <li class="mb-4">->Prient Media Design</li>
+              <li><a href="singleService.html" class="service-btn">Details</a></li>
+
+
+
+
+             </ul>
+
+
+           </div>
+
+         </div>
+         
+
+
+       </div>
+
+
+       <div class="service-box col-lg-4 col-md-6 text-center">
+       
+         
+         <div class="service-box-container hover-section-6" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/oliver-pecker-HONJP8DyiSM-unsplash.jpg') no-repeat; background-size: cover;background-position: center; border-radius: 5px;transition: 0.5s all;width: 100%; height: 60vh;">
+           
+           <div class="service-content">
+              
+              <i class="fas fa-envelope service-icon3"></i>
+
+             <h5>Domain & Hosting</h5>
+
+              <ul class="list service-list6">
+               
+              Comming Sooon...
+
+
+
+             </ul>
+
+
+           </div>
+
+         </div>
+         
+
+
+       </div>
+
+
+       </div>
+
+      </div>
+
+      
+
+
+    </section>
+
+
+    <!-- our services section end-->
+
+
+    <!-- pricing section -->
+
+    <section class="wrapper pricing">
+
+      
+      
+      <div class="container">
+        
+        <div class="row">
+          
+          <div class="col-md-6 offset-md-3 text-center">
+            
+             <h2>Our Pricing</h2>
+             
+            <div style="margin-bottom: 4rem; width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 5px; background: red;" class="botm-mrg"></div>  
+
+          </div>           
+
+              
+
+          </div>
+
+        </div>
+
+         <div class="text-center">
+          
+          <h5>Web Development</h5>
+          <div style="width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: red;" class="botm-mrg"></div>  
+
+          </div>
+
+        </div>
+
+        <div class="row mobile_pixel_20 align-items-center justify-content-center d-flex">
+
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in-right" data-aos-delay="100"  data-aos-duration="1000">
+            
+            <div class="single_price">
+              
+              <div class="month">
+                
+                3 Days
+
+              </div>
+              <h5>Premium</h5>
+              <div class="icon_pad">
+                
+                <div class="icon-circle">
+                  
+                  <span class="fa fa-id-card-o"></span>
+
+                </div>
+
+
+              </div>
+
+              <!-- doller -->
+
+              <div class="doller">
+                
+                <h2><span class="doller-sine">$</span>55</h2>
+
+              </div>
+
+              <!-- feature list -->
+
+              <ul>
+                
+                <br>
+                <li>5GB Linux Web Space</li>
+                <li>5 Mysql Database</li>
+                <li>5GB Linux Web Space</li>
+                <li>24 / 7 Tech Support</li>
+                <li>5GB Linux Web Space</li>
+
+
+              </ul>
+
+              <!-- button -->
+              <a href="#" class="btn-bordered">Learn More</a>
+
+            </div>
+
+          </div>
+
+
+          <!-- 2 -->
+
+           <div class="col-lg-4 col-md-6" data-aos="zoom-in-right" data-aos-delay="100"  data-aos-duration="1000">
+            
+            <div class="single_price">
+              
+              <div class="month">
+                
+                Month
+
+              </div>
+              <h5>Premium</h5>
+              <div class="icon_pad">
+                
+                <div class="icon-circle">
+                  
+                  <span class="fa fa-id-card-o"></span>
+
+                </div>
+
+
+              </div>
+
+              <!-- doller -->
+
+              <div class="doller">
+                
+                <h2><span class="doller-sine">$</span>55</h2>
+
+              </div>
+
+              <!-- feature list -->
+
+              <ul>
+                
+                <br>
+                <li>5GB Linux Web Space</li>
+                <li>5 Mysql Database</li>
+                <li>5GB Linux Web Space</li>
+                <li>24 / 7 Tech Support</li>
+                <li>5GB Linux Web Space</li>
+
+
+              </ul>
+
+              <!-- button -->
+              <a href="#" class="btn-bordered ">Learn More</a>
+
+            </div>
+
+          </div>
+
+          <!-- 3 -->
+
+              <div class="col-lg-4 col-md-6" data-aos="zoom-in-right" data-aos-delay="200"  data-aos-duration="1000">
+            
+            <div class="single_price active_price">
+              
+              <div class="month">
+                
+                Month
+
+              </div>
+              <h5>Basic</h5>
+              <div class="icon_pad">
+                
+                <div class="icon-circle">
+                  
+                  <span class="fa fa-id-card-o"></span>
+
+                </div>
+
+
+              </div>
+
+              <!-- doller -->
+
+              <div class="doller">
+                
+                <h2><span class="doller-sine">$</span>75</h2>
+
+              </div>
+
+              <!-- feature list -->
+
+              <ul>
+                
+                <br>
+                <li>5GB Linux Web Space</li>
+                <li>5 Mysql Database</li>
+                <li>5GB Linux Web Space</li>
+                <li>24 / 7 Tech Support</li>
+                <li>5GB Linux Web Space</li>
+
+
+              </ul>
+
+              <!-- button -->
+              <a href="#" class="shadow btn-bordered ">Learn More</a>
+
+            </div>
+
+          </div>
+
+          <!-- 4 -->
+
+          
+
+          <!-- end -->
+          
+
+
+        </div>
+
+        <div style="width: 100%; justify-content: center; display: flex; margin-top: 2rem;" class="pricing-bottom">
+          
+          <a class="more-btn" href="#"><i class="pe-2 fas fa-angle-double-right"></i>See More</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- pricing section end-->
+
+
+    <!-- our Work section -->
+
+
+    <section id="portfolio" class="wrapper portfolio">
+      <div class="container">
+
+        <div class="text-center protfolio-text">
+          <h2>Our Works</h2>
+           <div style="margin: 20px 0 60px 0; width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: red;" class="botm-mrg"></div>  
+
+          </div>
+        </div>
+
+        
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-website">Website</li>
+              <li data-filter=".filter-software">Software</li>
+              <li data-filter=".filter-seo">Seo</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="zoom-in" data-aos-duration="1000">
+              
+          <div class="col-lg-4 col-md-4 portfolio-item filter-website">
+           
+            <div class="portfolio-wrap">
+              
+              <img src="images/tim-kabel-FCrYdP8gohg-unsplash.jpg" class="img-fluid" alt="">
+              
+              <div class="portfolio-info">
+                <h3 style="text-align: center; color: #fff;">Website</h3>
+
+                <div style=" width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: #fff;" class="botm-mrg"></div>  
+
+          </div>
+             
+             <p class="mt-2 text-light">Wordpress Website</p>   
+             
+              </div>
+            </div>
+         
+          </div>
+
+          <div class="col-lg-4 col-md-4 portfolio-item filter-seo">
+            <a href="department-details.html">
+            <div class="portfolio-wrap">
+              <img src="images/tim-kabel-FCrYdP8gohg-unsplash.jpg" class="img-fluid" alt="">
+             
+              <div class="portfolio-info">
+                <h3 style="text-align: center; color: #fff;">Seo</h3>
+
+                <div style=" width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: #fff;" class="botm-mrg"></div>  
+
+          </div>
+             
+             <p class="mt-2 text-light">Facebook Marketing</p>   
+             
+              </div>
+
+            </div>
+            </a>
+          </div>
+
+       
+
+         
+          <div class="col-lg-4 col-md-4  portfolio-item filter-software">
+            <a href="department-details.html">
+            <div class="portfolio-wrap">
+              <img src="images/tim-kabel-FCrYdP8gohg-unsplash.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+                <h3 style="text-align: center; color: #fff;">Software</h3>
+
+                <div style=" width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: #fff;" class="botm-mrg"></div>  
+
+          </div>
+             
+             <p class="mt-2 text-light">School Management</p>   
+             
+              </div>
+            </div>
+            </a>
+          </div>
+
+         
+
+        </div>
+
+      </div>
+    </section>
+    
+
+     
+
+    <!-- our Work end-->
+
+
+    <!-- our team -->
+
+   <section class="my-5 ourteam py-3 ">
+
+    <div class="container">
+
+      <div class="text-center ">
+        
+      <h3 class="text-light">Our Team</h3>
+
+
+      </div>
+
+      <div style="margin: 20px 0 60px 0; width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 2px; background: red;" class="botm-mrg"></div>  
+
+          </div>
+      
+
+    </div>
+     
+
+     <div class="card-db" data-aos="fade-up" data-aos-duration="500">
+        <div class="circle">
+            <div class="imgBox">
+                <img src="images/team/team1.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+          <div class="social-cont">
+            <a href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            </div>
+            <h3>James Ford</h3>
+            <div class="textIcon">
+                <h4>Director General</h4>
+                <a href="#">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="card-db" data-aos="fade-up" data-aos-duration="500">
+        <div class="circle">
+            <div class="imgBox">
+                <img src="images/team/team1.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+          <div class="social-cont">
+
+            <a href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+
+          </div>
+            <h3>Ann Brown</h3>
+            <div class="textIcon">
+                <h4>Mannager</h4>
+                <a href="#">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="card-db" data-aos="fade-up"
+     data-aos-duration="500">
+        <div class="circle">
+            <div class="imgBox">
+                <img src="images/team/team1.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+          <div class="social-cont">
+
+            <a href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+
+          </div>
+            <h3>Ben Jason</h3>
+            <div class="textIcon">
+                <h4>Developer</h4>
+                <a href="#">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-db" data-aos="fade-up" data-aos-duration="500">
+        <div class="circle">
+            <div class="imgBox">
+                <img src="images/team/team1.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+          <div class="social-cont">
+
+            <a href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+
+          </div>
+            <h3>Ben Jason</h3>
+            <div class="textIcon">
+                <h4>Developer</h4>
+                <a href="#">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-db" data-aos="fade-up" data-aos-duration="500">
+        <div class="circle">
+            <div class="imgBox">
+                <img src="images/team/team1.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+
+          <div class="social-cont">
+
+            <a href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+
+             <a href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+             <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+
+          </div>
+            <h3>Ben Jason</h3>
+            <div class="textIcon">
+                <h4>Developer</h4>
+                <a href="#">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-db" data-aos="fade-up" data-aos-duration="500">
+        <div class="circle">
+            <div class="imgBox">
+                <img src="images/team/team1.jpg" alt="">
+            </div>
+        </div>
+        <div class="content">
+
+          <div class="social-cont">
+
+            <a href="#">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+
+          </div>
+            <h3>Ben Jason</h3>
+            <div class="textIcon">
+                <h4>Developer</h4>
+                <a href="#">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   </section>
+
+
+    <!-- our team end-->
+
+
+
+
+   
+
+
+
+
+
+    <!-- Our Clint -->
+
+
+
+
+
+    <section class="clients py-5">
+      
+      <div class="container">
+        
+        <div class="row justify-content-center">
+          
+        <div class="col-md-12">
+          
+          <div class="text-center">
+            
+            <h3>Our Valuable Clint</h3>
+
+          </div>
+
+          <div style="margin-bottom: 4rem; width: 100%; display: flex; justify-content: center;" class="margin-marg">
+             <div style="width: 180px;height: 5px; background: red;" class="botm-mrg"></div>  
+
+          </div> 
+          <div class="client-section-text text-center">
+            
+            <!-- <p>Wow Nice Amazing Text Our Happy Clients</p> -->
+
+          </div>
+
+        </div>
+
+        </div>
+
+      <div class="client-section">
+
+
+          
+            
+    <div class="owl-carousel owl-theme">
+    <div class="item" data-aos="zoom-in" data-aos-delay="100"     data-aos-duration="1000"
+><img src="images/clint/client-1.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="200"     data-aos-duration="1000"
+> <img src="images/clint/client-2.png"> </div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="300"     data-aos-duration="1000"
+><img src="images/clint/client-3.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="400"     data-aos-duration="1000"
+><img src="images/clint/client-4.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="500"     data-aos-duration="1000"
+><img src="images/clint/client-5.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="600"     data-aos-duration="1000"
+><img src="images/clint/client-6.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="100"     data-aos-duration="1000"
+><img src="images/clint/client-7.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="100"     data-aos-duration="1000"
+><img src="images/clint/client-8.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="100"     data-aos-duration="1000"
+><img src="images/clint/client-6.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="100"     data-aos-duration="1000"
+><img src="images/clint/client-5.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="100"     data-aos-duration="1000"
+><img src="images/clint/client-4.png"></div>
+    <div class="item" data-aos="zoom-in" data-aos-delay="100"     data-aos-duration="1000"
+><img src="images/clint/client-3.png"></div>
+    </div>
+
+      
+
+      </div>
+
+      </div>
+
+      
+
+     
+
+      
+      <!-- end -->
+
+    </section>
+
+
+    
+
+
+    <!-- contact section -->
+
+    <section id="contact">
+      
+      <div class="contact" data-aos="zoom-in" data-aos-duration="1000">
+        
+        <div class="text-center contact-text">
+          <p>Lets Start Conversation!</p>
+          <h3>Contact Us</h3>
+        </div>
+
+          <!-- <div class="bottom-margin"></div> -->
+
+          <div class="container">
+            
+            <div class="row">
+              
+              <div class="col-lg-5 col-md-5">
+                
+                <h3 class="fw-bold">Contact info</h3>
+
+                <ul style="padding: 0; margin: 0;">
+                  <li class="d-flex align-items-center"><i class="num1 fas fa-map-marker-alt"></i><a href="#">Wow Nice Amazing Text Our Happy Clients</a></li>
+                   <li class="d-flex align-items-center"><i class="num fas fa-mobile-alt"></i><a href="#">0115 5567 55478</a></li>
+                    <li class="d-flex align-items-center"><i class="num1 far fa-envelope"></i><a href="#">Info@gmail.com</a></li>
+
+
+
+                  
+
+
+                </ul>
+
+              </div>
+
+              <div class="col-lg-7 col-md-7 pt-lg-0 pt-md-0 pt-4">
+                
+                <form>
+                  
+                  <div class="row">
+                    
+                    <div class="col-md-6">
+                      
+                      <div class="form-group pb-lg-0 pb-md-0 pb-3">
+                        
+                        <input type="text" class="form-control" name="name" autocomplete="off" placeholder="Your Name">
+
+                      </div>
+
+                    </div>
+
+                     <div class="col-md-6">
+                      
+                      <div class="form-group">
+                        
+                        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Your Email Address">
+
+                      </div>
+
+                    </div>
+
+                    <div class="col-md-12">
+                      
+                      <div class="form-group">
+                        
+                       <textarea class="textarea" cols="30" rows="4" placeholder="Enter Your Message"></textarea>
+
+                      </div>
+
+                    </div>
+
+                     <div class="col-md-12">
+                      
+                     <button class="contact-btn"><i class="sen pe-2 fas fa-paper-plane"></i>Send Message</button>
+
+
+                    </div>
+
+
+
+
+
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- footer -->
+
+    <footer id="footer" class="footer">
+      
+      <div class="footer_top">
+        
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 col-md-6 footer_contact" data-aos="fade-up"   data-aos-delay="100">
+              
+              <h3>Unibox It</h3>
+
+              <p>United State
+
+                <br>Los Angels<br>
+                001547<br>
+                </p>
+
+                <strong>Phone:</strong> +12548980<br>
+                <strong>Email:</strong> Example@gmail.com
+
+
+              
+
+            </div>
+
+            <div  class="col-lg-2 col-md-6 footer_links" data-aos="fade-up" data-aos-delay="50">
+              
+              <h4>Useful Links</h4>
+
+              <ul>
+                
+                <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Home</a>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer_links" data-aos="fade-down" data-aos-delay="50">
+              
+              <h4>Our Services</h4>
+
+              <ul>
+                
+                <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Web Development</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Web Design</a>
+
+                </li>
+
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Grapics Design</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Seo</a>
+
+                </li>
+
+                 <li>
+                  
+                  <i class="pe-2 fa fa-chevron-right"></i><a href="#">Software Development</a>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="text-center col-lg-4 col-md-6 footer_newsletter" data-aos="fade-down" data-aos-delay="100">
+
+              <h4>Join Our Newsletter </h4>
+              <p>Amazing Software Experiance Amazing web Server</p>
+              <form>
+                
+                <input type="email" name="email">
+                <input type="submit" value="Subscribe">
+              </form>
+              
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+     
+       <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Unibox It</span></strong>. All Rights Reserved
+        </div>
+       
+      </div>
+      <div class="social-links text-center text-md-end pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="fab fa-skype"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+
+    </footer>
+
+    <!-- footer end -->
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fas fa-arrow-up"></i></a>
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+    <!-- jquery -->
+
+    <script src="js/jquery-3.6.0.js"></script>
+
+
+    <!-- boostrap js -->
+
+    <script src="js/bootstrap.min.js"></script>
+
+   <!-- owl carosel css -->
+
+    <script src="js/owl.carousel.min.js"></script>
+   
+   <!-- owl carosel css end-->
+
+   <!-- aos js -->
+
+   <script src="js/aos.js"></script>
+
+
+  
+
+   
+
+    <!-- particle -->
+
+    <script src="js/particles.min.js"></script>
+
+
+    <script src="js/app.js"></script>
+
+    <!-- counter js -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- main js -->
+
+    <!-- owl carosel -->
+
+  
+   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    
+
+    <!-- our work -->
+
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- filter image -->
+
+    <script src="js/filter.min.js"></script>
+
+    <!-- swiper js -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+
+ 
+
+    <script src="js/main.js"></script>
+    <script src="js/vanilla.js"></script>
+    <script src="js/index.js"></script>
+
+   
+
+
+   
+
+   
+
+   
+
+    
+
+
+    
+  </body>
+</html>
